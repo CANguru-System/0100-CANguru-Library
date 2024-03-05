@@ -1,3 +1,4 @@
+#ifdef ESP32_DECODER
 #include <WiFi.h>
 #include <ESPmDNS.h>
 #include <WiFiUdp.h>
@@ -125,3 +126,4 @@ void Connect2WiFiandOTA(Preferences preferences)
     ElegantOTA.loop();
   }
 }
+#endif
